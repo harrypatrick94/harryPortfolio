@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom'
 import Home from './components/home'
 import Introduction from './components/introduction'
-import Technologies from './components/technologies'
 import Projects from './components/projects'
 import Contact from './components/contact'
 import Email from './components/email'
