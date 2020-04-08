@@ -11,7 +11,7 @@ const Introduction = () => {
           As a junior developer I am looking for a role where I am in the best position to learn and develop my programming skills
         </p>
         <p>
-          Programming is an unknown mysterious world to me, but within this mystery are possibilities to create and influence the world around me. I aim to combine my education in technology with my interest in renewable energy. I am passionate about creating cleaner air, oceans and land, I will always look for opportunities to help create this environmental change.
+          Programming is an new expanding world to me, but within this are possibilities to create and influence the world around me. I aim to combine my education in technology and passion for learning about code with my interest in renewable energy. I am passionate about creating cleaner air, oceans and land, I will always look for opportunities to help create this environmental change.
       </p>
     </div>
   )

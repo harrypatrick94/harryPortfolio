@@ -3,7 +3,7 @@ import * as THREE from 'three';
 
 const Introduction = () => {
 
-  console.log('lib');
+  //console.log('lib');
 
 var app = app || {};
 

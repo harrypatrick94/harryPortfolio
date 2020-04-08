@@ -9,6 +9,7 @@ import Introduction from './components/introduction'
 import Technologies from './components/technologies'
 import Projects from './components/projects'
 import Contact from './components/contact'
+import Email from './components/email'
 
 
 import './App.css';
@@ -32,7 +33,7 @@ function App() {
             <Route exact path='/' component={Contact}/>
             <Route exact path='/introduction' component={Introduction}/>
             <Route exact path='/projects' component={Projects}/>
-
+            <Route exact path='/email' component={Email}/>
 
       </Router>
     </>

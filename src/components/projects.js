@@ -12,11 +12,11 @@ import '../App.css'
 const Projects = () => {
 
   return(
-    
+
     <>
       <div className="explaination">
         <h2 className="projectsHeading">Projects</h2>
-        <p>
+        <div>
           <h4 className="projectsHeading">RomeAudio</h4>
           <p>
             RomeAudio is a react built in browser drum machine. After enjoying a friend's analog drum machine, I began to think how awesome it would be to have my own. This is when I began to think about the possibilities provided by tone.js.
@@ -34,8 +34,9 @@ const Projects = () => {
           <p>
             <a href="https://harrypatrick94.github.io/RomeAudio-Frontend/#/" target="_blank"><img src={romeAudio} className="projectImg"/></a>
           </p>
-        </p>
-        <p>
+        </div>
+
+        <div>
           <h4 className="projectsHeading">Visualpedia</h4>
           <p>
             Visualpedia was a collaborative projects with 3 other General Assembly students.
@@ -55,8 +56,8 @@ const Projects = () => {
           <p>
             <a href="https://maiqvu.github.io/visualpedia/#/login" target="_blank"><img src={vp} className="projectImg"/></a>
           </p>
-        </p>
-        <p>
+        </div>
+        <div>
           <h4 className="projectsHeading">MusikDB</h4>
           <p>
             A music database application the facilitates the storage of and updating of favourite songs and musicians
@@ -76,8 +77,8 @@ const Projects = () => {
           <p>
             <a href="https://maiqvu.github.io/visualpedia/#/login" target="_blank"><img src={musikdb} className="projectImg"/></a>
           </p>
-        </p>
-        <p>
+        </div>
+        <div>
           <h4 className="projectsHeading">Tic-Tac-Toe</h4>
           <p>
             A replica of game of Tic-Tac-Toe, with the ability to draw your own game board in the browser.
@@ -92,7 +93,7 @@ const Projects = () => {
           <p>
             <a href="https://maiqvu.github.io/visualpedia/#/login" target="_blank"><img src={tictactoe} className="projectImg"/></a>
           </p>
-        </p>
+        </div>
       </div>
     </>
   )

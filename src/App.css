@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -54,6 +57,8 @@ body{
   overflow: hidden;
   margin: 0;
   background: black;
+  font-family: 'Barlow', sans-serif;
+
 }
 
 div {
@@ -96,7 +101,7 @@ div {
   height: 600px;
   width: 500px;
   color: white;
-  text-align: justify;
+  /* text-align: justify; */
 
   padding: 15px;
   font-size: 23px;
@@ -134,7 +139,7 @@ div {
     height: 600px;
     width: 500px;
     color: white;
-    text-align: justify;
+
     padding: 15px;
     font-size: 23px;
 
@@ -163,9 +168,10 @@ ul {
   list-style-type: none;
   color: white;
   text-transform: uppercase;
+  padding: 0;
 }
 
-li {
+li.contactLI, li.navBarLI {
   display: inline-block;
   margin: 10px;
   color: white;
@@ -185,10 +191,11 @@ li {
 }
 
 .me {
+
   height: 250px;
   width: 250px;
   border-radius: 125px;
-  margin: 0 120px;
+  margin: 50px 120px 0;
 }
 
 .contactUl {
@@ -199,6 +206,10 @@ li {
 a {
   color: white;
   text-decoration: none;
+}
+
+#meet {
+  font-size: 20px;
 }
 /* .stars {
   position: absolute;
