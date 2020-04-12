@@ -32,8 +32,8 @@ const Email = () => {
     console.log('sent');
   }
 
-  const sendEmail = () => {
-
+  const sendEmail = (e) => {
+     e.preventDefault()
     axios.post('http://ec2-13-211-167-99.ap-southeast-2.compute.amazonaws.com/send?', {
       name,
       email,
@@ -42,12 +42,17 @@ const Email = () => {
     .then(() => clearForm())
     .catch(err => console.warn(err))
 
+
+    // fetch(`https://email-server-rome-portfolio.herokuapp.com/send-email?emailTo=${emailTo}&emailFrom=${email}&name=${name}&message=${message}`)
+    //   .then(clearForm())
+    //   .catch(err => console.warn(err))
+
   }
 
   return (
 
     <div className="contactContainer">
-      <form className="contactForm" onSubmit={() => sendEmail()}>
+      <form className="contactForm" onSubmit={(e) => sendEmail(e)}>
         <h2>Contact Us</h2>
         <ul className="formUL">
           <li className="formLI">
