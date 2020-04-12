@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import axios from 'axios'
 import './contact.css'
 const Email = () => {
 
@@ -28,12 +29,18 @@ const Email = () => {
     setEmail('');
     setMessage('');
     setConfirmation(true)
+    console.log('sent');
   }
 
   const sendEmail = () => {
-    fetch(`https://email-server-rome-portfolio.herokuapp.com/send-email?emailTo=${emailTo}&emailFrom=${email}&name=${name}&message=${message}`)
-      .then(clearForm())
-      .catch(err => console.warn(err))
+
+    axios.post('http://ec2-13-211-167-99.ap-southeast-2.compute.amazonaws.com/send?', {
+      name,
+      email,
+      message
+    })
+    .then(() => clearForm())
+    .catch(err => console.warn(err))
 
   }
 

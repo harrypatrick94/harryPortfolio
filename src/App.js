@@ -23,7 +23,6 @@ function App() {
                   <Link to='/'><li className="navBarLI">Contact</li></Link>
                   <Link to="/introduction"><li className="navBarLI">Me</li></Link>
                   <Link to="/projects"><li className="navBarLI">Projects</li></Link>
-
                 </ul>
               </nav>
             </div>
@@ -33,7 +32,6 @@ function App() {
             <Route exact path='/introduction' component={Introduction}/>
             <Route exact path='/projects' component={Projects}/>
             <Route exact path='/email' component={Email}/>
-
       </Router>
     </>
   );
