@@ -15,7 +15,7 @@ const Contact = () => {
         <ul className="contactUl">
           <li className="contactLI"><a href="https://www.linkedin.com/in/harrygpatrick/" target="_blank">linkedin</a></li>
           <li className="contactLI"><a href="https://github.com/harrypatrick94" target="_blank">github</a></li>
-          <li className="contactLI"><Link to="/email">Email</Link></li>
+          <li className="contactLI"><a href="mailto:harry.g.patrick94@gmail.com">Contact Me</a></li>
           <li className="contactLI"><a href={resume} download>Download CV</a></li>
         </ul>
     </div>
@@ -24,4 +24,6 @@ const Contact = () => {
 
 export default Contact
 
-// <li className="contactLI"><a href="mailto:harry.g.patrick94@gmail.com">Contact Me</a>
+// <li className="contactLI"><a href="mailto:harry.g.patrick94@gmail.com">Contact Me</a></li>
+
+  // <li className="contactLI"><Link to="/email">Email</Link></li>
