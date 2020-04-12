@@ -34,7 +34,7 @@ const Email = () => {
 
   const sendEmail = (e) => {
      e.preventDefault()
-    axios.post('http://ec2-13-211-167-99.ap-southeast-2.compute.amazonaws.com/send?', {
+    axios.post('https://ec2-13-211-167-99.ap-southeast-2.compute.amazonaws.com/send?', {
       name,
       email,
       message
@@ -88,3 +88,5 @@ const Email = () => {
 }
 
 export default Email
+
+// xhr.js:178 Mixed Content: The page at 'https://harrypatrick94.github.io/harryPortfolio/?#/email' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://ec2-13-211-167-99.ap-southeast-2.compute.amazonaws.com/send?'. This request has been blocked; the content must be served over HTTPS.
