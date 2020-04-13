@@ -10,3 +10,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// http://harrypatrick.com.s3-website-ap-southeast-2.amazonaws.com

@@ -2,14 +2,15 @@
   "name": "react-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://harrypatrick94.github.io/harryPortfolio/",
+  "homepage": "http://harrypatrick.com",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws sync build/ s3:harrypatrick.com"
   },
   "author": "",
   "license": "ISC",
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "s3": "^4.4.0"
   }
 }
